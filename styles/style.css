@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background: #131518;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 1.5rem;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* ===============
+   Typography
+   ===============*/
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: .625rem;
+}
+
+.card-text {
+    font-size: .875rem;
+    font-weight: 400;
+    color: #969FAD;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ===============
+   Layout
+   ===============*/
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ===============
+   Rating Section
+   ===============*/
+.rating-card,
+.response-card {
+    background: linear-gradient(to bottom, #232A34, #181E27);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    max-width: 412px;
+}
+
+.star-icon {
+    background: #262E38;
+    padding: .8125rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* ===============
+   Buttons
+   ===============*/
+
+.btn {
+    font-family: inherit;
+    font-size: .875rem;
+    font-weight: 700;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.rating-container {
+    margin: 2.3125rem 0 2.675rem;
+
+}
+
+.rating-btn {
+    color: #7C8798;
+    background: #262E38;
+    border-radius: 50%;
+    padding: .6rem 1rem;
+    text-decoration: none;
+}
+
+.rating-btn:hover {
+    background: #7C8798;
+    color: #fff;
+}
+
+.rating-btn:focus {
+    background: #FC7614;
+    color: #fff;
+}
+
+.submit-btn {
+    color: #fff;
+    background: #FC7614;
+    width: 100%;
+    border-radius: 500px;
+    margin-bottom: .5rem;
+    padding: .8571em 0;
+    text-transform: uppercase;
+    letter-spacing: 1.87px;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background: #fff;
+    color: #FC7614;
+}
+
+#alert {
+    color: red;
+    display: none;
+    text-align: center;
+}
+
+/* ===============
+   Response Card
+   ===============*/
+.response-card {
+    display: none;
+    text-align: center;
+}
+
+.rating-return {
+    font-size: .875rem;
+    color: #FC7614;
+    background: #262E38;
+    border-radius: 500px;
+    margin: 1.5rem 0;
+    padding: .3125rem .75rem;
+    display: inline-block;
+}
+
+.card-text:last-child {
+    margin-bottom: .75rem;
+}
+
+.response-img {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 400px) {
+
+    /* ===============
+       Typography
+       ===============*/
+    .card-title {
+        font-size: 1.75rem;
+        margin-bottom: .625rem;
+    }
+
+    .card-text {
+        font-size: .9375rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* ===============
+       Rating Section
+       ===============*/
+    .rating-card,
+    .response-card {
+        padding: 2rem;
+    }
+
+    .rating-return {
+        font-size: .9375rem;
+        margin: 2rem 0;
+        padding: .3125rem 1.25rem;
+    }
+
+    /* ===============
+       Buttons
+       ===============*/
+
+    .btn {
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 700;
+        border: none;
+    }
+
+    .rating-btn {
+        padding: .9rem 1.4rem;
+    }
+
+    .submit-btn {
+        padding: .6875rem 0;
+    }
+
+}

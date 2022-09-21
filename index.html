@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <div class="rating-card">
+    <img src="images/icon-star.svg" alt="orange star in gray circle" class="star-icon">
+    <h1 class="card-title">How did we do?</h1>
+    <p class="card-text">Please let us know how we did with your support request. All feedback is appreciated to help us
+      improve our offering!</p>
+    <div class="rating-container">
+      <ul class="flex-container">
+        <li class="btn option"><a href="#" class="rating-btn">1</a></li>
+        <li class="btn option"><a href="#" class="rating-btn">2</a></li>
+        <li class="btn option"><a href="#" class="rating-btn">3</a></li>
+        <li class="btn option"><a href="#" class="rating-btn">4</a></li>
+        <li class="btn option"><a href="#" class="rating-btn">5</a></li>
+      </ul>
+    </div>
+    <button class="btn submit-btn">Submit</button>
+    <p id="alert">Please select a rating</p>
+  </div>
+  <div class="response-card">
+    <img src="images/illustration-thank-you.svg" alt="cellphone with cartoon images coming out of the screen"
+      class="response-img">
+    <p class="rating-return"></p>
+    <p class="card-title">Thank you!</p>
+    <p class="card-text">We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
